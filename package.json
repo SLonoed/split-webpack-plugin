@@ -1,5 +1,5 @@
 {
-  "name": "split-by-name-webpack-plugin",
+  "name": "split-webpack-plugin",
   "version": "0.0.3",
   "description": "Split a Webpack entry bundle into any number of arbitrarily defined smaller bundles",
   "main": "index.js",
