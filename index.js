@@ -15,8 +15,9 @@ SplitByNamePlugin.prototype.apply = function(compiler) {
 
   function findMatchingBucket(chunk) {
     var match = null;
+  
     options.buckets.some(function (bucket) {
-      if (bucket.regex.test(chunk.rawRequest)) {
+      if (chunk.userRequest && chunk.userRequest.indexOf(bucket.path) === 0) {        
         match = bucket;
         return true;
       }
